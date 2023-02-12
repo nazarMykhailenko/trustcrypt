@@ -1,19 +1,19 @@
 // ========= Constants =========
 // HTML for burger and for close
-const burgerIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+const burgerIcon: string = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 `
-const closeIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+const closeIcon: string = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 </svg>
 `
 
 // tailwind classes for burger
-const LEFT_FULL = `-left-full`
-const LEFT_0 = `left-0`
-const OVERFLOW_HIDDEN = `overflow-hidden`
-const OVERFLOW_AUTO = `overflow-y-auto`
+const LEFT_FULL: string = `-left-full`
+const LEFT_0: string = `left-0`
+const OVERFLOW_HIDDEN: string = `overflow-hidden`
+const OVERFLOW_AUTO: string = `overflow-y-auto`
 
 // ========= HTML element =========
 const $body = document.body // body element
