@@ -7,12 +7,12 @@
 		<link rel="stylesheet" href="./styles.css" />
 		<title>Trustcrypt</title>
 	</head>
-	<body class="overflow-y-auto">
+	<body class="overflow-x-hidden overflow-y-auto">
 		<!-- wrapper -->
 		<div class="text-white min-w-screen min-h-screen flex flex-col">
 			<!-- ibg -->
 			<div
-				class="bg-bgCover bg-no-repeat bg-cover bg-center block fixed -left-[5px] -top-[5px] -right-[5px] -bottom-[5px] -z-[10] blur-sm"
+				class="bg-bgCover bg-no-repeat bg-cover bg-center block fixed -left-[5px] -top-[5px] -right-[5px] -bottom-[5px] -z-20 blur-sm"
 			></div>
 
 			<!-- header -->
@@ -30,7 +30,7 @@
 						<!-- menu -->
 						<div
 							id="menu"
-							class="-z-10 sm:z-0 fixed -left-full top-0 w-full h-full bg-gradient-to-br from-indigo-500 to-indigo-300 sm:from-transparent sm:to-transparent sm:bg-transparent sm:relative sm:left-0 flex flex-col sm:flex-row items-center sm:space-x-7 md:space-x-10 lg:space-x-20 py-32 sm:py-0 space-y-10 sm:space-y-0"
+							class="overflow-auto -z-10 sm:z-0 fixed -left-full top-0 bottom-0 right-0 w-full h-full bg-gradient-to-br from-indigo-500 to-indigo-300 sm:from-transparent sm:to-transparent sm:bg-transparent sm:relative sm:left-0 flex flex-col sm:flex-row items-center sm:space-x-7 md:space-x-10 lg:space-x-20 py-32 sm:py-0 space-y-10 sm:space-y-0"
 						>
 							<!-- navigation -->
 							<div>
@@ -140,9 +140,9 @@
 				</div>
 			</header>
 			<main class="py-16">
-				<div class="px-4 w-full md:w-5/6 mx-auto flex space-x-10">
+				<div class="px-4 w-full md:w-5/6 mx-auto big:flex big:space-x-10">
 					<!-- Active article -->
-					<section class="w-1/2">
+					<section class="w-full big:w-1/2">
 						<article class="font-light">
 							<h2 class="text-2xl mb-8 font-medium">
 								What is coding? And why do we need<br />
@@ -213,12 +213,12 @@
 							</div>
 							<div class="w-full mb-8 relative">
 								<div
-									class="p-2 bg-[#0FAE96] rounded-full text-white inline-flex absolute top-7 left-7 items-center text-sm cursor-pointer"
+									class="p-2 bg-[#0FAE96] rounded-full text-white inline-flex absolute top-3 left-3 sm:left-5 sm:top-5 big:top-7 big:left-7 items-center text-sm cursor-pointer"
 								>
 									Developing
 								</div>
 								<img
-									class="w-full rounded-xl object-cover"
+									class="w-full sm:w-2/3 big:w-full h-auto max-h-[20rem] md:max-h-[25rem] rounded-xl object-cover"
 									src="../src/assets/img/articlePicture_1.jpg"
 									alt="jpg image"
 								/>
@@ -243,7 +243,7 @@
 								modest two-year program and finish their studies on the job.
 							</p>
 							<img
-								class="w-full rounded-xl object-cover inline-block mb-8"
+								class="w-full sm:w-2/3 big:w-full h-auto max-h-[20rem] md:max-h-[25rem] rounded-xl object-cover inline-block mb-8"
 								src="../src/assets/img/articlePicture_2.jpg"
 								alt="jpg image"
 							/>
@@ -275,7 +275,7 @@
 					</section>
 
 					<!-- Feed -->
-					<section class="w-1/2">
+					<section class="w-full big:w-1/2">
 						<h2 class="text-2xl mb-8 font-medium">Popular articles</h2>
 						<div class="flex items-center space-x-5 mb-8">
 							<div
