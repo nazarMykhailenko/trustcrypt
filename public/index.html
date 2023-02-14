@@ -139,16 +139,19 @@
 					</div>
 				</div>
 			</header>
+
 			<main class="py-16">
 				<div class="px-4 w-full md:w-5/6 mx-auto big:flex big:space-x-10">
 					<!-- Active article -->
 					<section class="w-full big:w-1/2">
 						<article class="font-light">
-							<h2 class="text-2xl mb-8 font-medium">
+							<h2
+								class="text-base sm:text-xl md:text-2xl mb-5 md:mb-8 font-medium"
+							>
 								What is coding? And why do we need<br />
 								programmers?
 							</h2>
-							<div class="inline-flex space-x-6 items-center mb-8">
+							<div class="inline-flex space-x-6 items-center mb-5 md:mb-8">
 								<div
 									class="p-2 bg-[#131516] rounded-full flex space-x-2 items-center"
 								>
@@ -191,7 +194,10 @@
 											d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
 										/>
 									</svg>
-									<span class="text-sm">Published: 13th of April, 2022</span>
+									<span class="inline tiny:hidden text-sm">13.04.22</span>
+									<span class="hidden tiny:inline text-sm">
+										Published: 13th of April, 2022
+									</span>
 								</div>
 
 								<div class="p-2 bg-[#0FAE96] rounded-full cursor-pointer">
@@ -211,7 +217,7 @@
 									</svg>
 								</div>
 							</div>
-							<div class="w-full mb-8 relative">
+							<div class="w-full mb-5 md:mb-8 relative">
 								<div
 									class="p-2 bg-[#0FAE96] rounded-full text-white inline-flex absolute top-3 left-3 sm:left-5 sm:top-5 big:top-7 big:left-7 items-center text-sm cursor-pointer"
 								>
@@ -223,19 +229,21 @@
 									alt="jpg image"
 								/>
 							</div>
-							<p class="mb-5">
+							<p class="text-sm sm:text-base md:text-lg mb-5 md:mb-8">
 								It is impossible to imagine our life without computers,
 								smartphones, and therefore the software necessary for their
 								work. None of this would have been possible without coding.
 								Although this is not a new term, people still have a hard time
 								understanding what it means.
 							</p>
-							<p class="mb-5">
+							<p class="text-sm sm:text-base md:text-lg mb-5 md:mb-8">
 								Business Insider has published a quick guide to coding. We have
 								prepared an adapted translation of the material.
 							</p>
-							<h3 class="text-lg font-medium mb-5">What is coding?</h3>
-							<p class="mb-5">
+							<h3 class="text-base sm:text-lg md:text-xl font-medium mb-5">
+								What is coding?
+							</h3>
+							<p class="text-sm sm:text-base md:text-lg mb-5 md:mb-8">
 								Coding is the process of writing program code or script to
 								execute a specific algorithm. This is what coders do. It is
 								believed that at least a bachelor's degree is needed to perform
@@ -243,26 +251,28 @@
 								modest two-year program and finish their studies on the job.
 							</p>
 							<img
-								class="w-full sm:w-2/3 big:w-full h-auto max-h-[20rem] md:max-h-[25rem] rounded-xl object-cover inline-block mb-8"
+								class="w-full sm:w-2/3 big:w-full h-auto max-h-[20rem] md:max-h-[25rem] rounded-xl object-cover inline-block mb-5 md:mb-8"
 								src="../src/assets/img/articlePicture_2.jpg"
 								alt="jpg image"
 							/>
-							<h3 class="text-lg font-medium mb-5">
-								How to write a script with a computer instruction
+							<h3
+								class="text-base sm:text-lg md:text-xl font-medium mb-5 md:mb-8"
+							>
+								How to write a script with a computer instruction?
 							</h3>
-							<p class="mb-8">
+							<p class="text-sm sm:text-base md:text-lg mb-5 md:mb-8">
 								Instructions are usually written in a high-level programming
 								language. Among them are C++, Basic, Python, Fortran. They are
 								called "languages" because they include rudiments of the English
 								language and are relatively intelligible to humans.
 							</p>
-							<p class="mb-8">
+							<p class="text-sm sm:text-base md:text-lg mb-5 md:mb-8">
 								The code contains statements and commands that, with some
 								practice, can be read and understood. One of the clearest
 								examples of simple code is the simple "print('Hello, world!')"
 								command.
 							</p>
-							<p class="mb-8">
+							<p class="text-sm sm:text-base md:text-lg mb-5 md:mb-8">
 								Even without additional training, it is clear that the coder
 								wants to print the phrase "Hello, world!". The nuance is that
 								you need to additionally specify the purpose. For example, print
@@ -276,28 +286,36 @@
 
 					<!-- Feed -->
 					<section class="w-full big:w-1/2">
-						<h2 class="text-2xl mb-8 font-medium">Popular articles</h2>
-						<div class="flex items-center space-x-5 mb-8">
+						<h2
+							class="text-base sm:text-xl md:text-2xl mb-5 md:mb-8 font-medium"
+						>
+							Popular articles
+						</h2>
+						<div
+							class="flex items-center space-x-2 tiny:space-x-5 mb-5 md:mb-8"
+						>
 							<div
-								class="py-2 px-3 bg-[#ECF1F0] cursor-pointer rounded border border-[#959999] text-black"
+								class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#ECF1F0] cursor-pointer rounded border border-[#959999] text-black"
 							>
 								For day
 							</div>
 							<div
-								class="py-2 px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
+								class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
 							>
 								For week
 							</div>
 							<div
-								class="py-2 px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
+								class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
 							>
 								For month
 							</div>
 						</div>
-						<div class="mb-8 flex flex-col">
-							<article class="flex items-center space-x-4 mb-8">
+						<div class="mb-5 md:mb-8 flex flex-col">
+							<article
+								class="flex-col flex md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mb-5 md:mb-8"
+							>
 								<div
-									class="relative inline-block rounded-xl overflow-hidden w-1/4"
+									class="relative inline-block rounded-xl overflow-hidden md:w-1/4"
 								>
 									<div
 										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
@@ -306,7 +324,7 @@
 										<div>Gaming</div>
 									</div>
 									<img
-										class="w-full h-full"
+										class="w-full h:auto max-w-[10rem] max-h-[10rem] big:max-w-none big:max-h-none object-cover big:h-full"
 										src="../src/assets/img/article1.jpg"
 										alt="article pic"
 									/>
@@ -335,11 +353,15 @@
 										<div class="text-[0.8rem]">24k</div>
 									</div>
 								</div>
-								<div class="w-3/4">
-									<h4 class="text-xl mb-3">
+								<div
+									class="w-full md:w-3/4 text-center md:text-left overflow-hidden"
+								>
+									<h4
+										class="whitespace-nowrap overflow-hidden text-ellipsis text-base sm:text-lg md:text-xl mb-2 md:mb-3"
+									>
 										The next part of Mass Effect moved into early...
 									</h4>
-									<p class="font-light mb-3">
+									<p class="text-sm md:text-base mb-2 md:mb-3 font-light">
 										BioWare has shared the progress of the next Mass Effect
 										game...
 									</p>
@@ -351,9 +373,11 @@
 								</div>
 							</article>
 
-							<article class="flex items-center space-x-4 mb-8">
+							<article
+								class="flex-col flex md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mb-5 md:mb-8"
+							>
 								<div
-									class="relative inline-block rounded-xl overflow-hidden w-1/4"
+									class="relative inline-block rounded-xl overflow-hidden md:w-1/4"
 								>
 									<div
 										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
@@ -364,7 +388,7 @@
 										/>Phishing
 									</div>
 									<img
-										class="w-full h-full"
+										class="w-full h:auto max-w-[10rem] max-h-[10rem] big:max-w-none big:max-h-none object-cover big:h-full"
 										src="../src/assets/img/article2.jpg"
 										alt="article pic"
 									/>
@@ -393,11 +417,13 @@
 										<div class="text-[0.8rem]">24k</div>
 									</div>
 								</div>
-								<div class="w-3/4">
-									<h4 class="text-xl mb-3">
+								<div class="w-full md:w-3/4 text-center md:text-left">
+									<h4
+										class="whitespace-nowrap overflow-hidden text-ellipsis text-base sm:text-lg md:text-xl mb-2 md:mb-3"
+									>
 										What is phishing and how to protect yourself from it?
 									</h4>
-									<p class="font-light mb-3">
+									<p class="text-sm md:text-base mb-2 md:mb-3 font-light">
 										The first phishing attacks appeared at the end of the last
 										century, and now, according to Google, the victims of
 										phishing...
@@ -410,20 +436,26 @@
 								</div>
 							</article>
 
-							<article class="flex items-center space-x-4 mb-8">
+							<article
+								class="flex-col flex md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mb-5 md:mb-8"
+							>
 								<div
-									class="relative inline-block rounded-xl overflow-hidden w-1/4"
+									class="relative inline-block rounded-xl overflow-hidden md:w-1/4"
 								>
 									<div
 										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
 									>
 										<img
-											class="w-full h-full"
+											class="w-full h:auto max-w-[10rem] max-h-[10rem] big:max-w-none big:max-h-none object-cover big:h-full"
 											src="../src/assets/img/security.svg"
 											alt="security"
 										/>Security
 									</div>
-									<img src="../src/assets/img/article3.jpg" alt="article pic" />
+									<img
+										class="w-full h:auto max-w-[10rem] max-h-[10rem] big:max-w-none big:max-h-none object-cover big:h-full"
+										src="../src/assets/img/article3.jpg"
+										alt="article pic"
+									/>
 									<div
 										class="absolute left-3 bottom-3 flex space-x-1 items-center py-1.5 px-2 bg-[#2A1D2B] rounded-full"
 									>
@@ -449,9 +481,13 @@
 										<div class="text-[0.8rem]">24k</div>
 									</div>
 								</div>
-								<div class="w-3/4">
-									<h4 class="text-xl mb-3">What is cyber security?</h4>
-									<p class="font-light mb-3">
+								<div class="w-full md:w-3/4 text-center md:text-left">
+									<h4
+										class="whitespace-nowrap overflow-hidden text-ellipsis text-base sm:text-lg md:text-xl mb-2 md:mb-3"
+									>
+										What is cyber security?
+									</h4>
+									<p class="text-sm md:text-base mb-2 md:mb-3 font-light">
 										Cybersecurity (sometimes referred to as computer security)
 										is a set of...
 									</p>
