@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./public/index.html'],
+	content: ['./public/homepage.html', './public/products-page.html'],
 	theme: {
 		extend: {
 			backgroundImage: {
@@ -8,6 +8,7 @@ module.exports = {
 			},
 			screens: {
 				big: '1280px',
+				avg: '525px',
 				tiny: '405px',
 			},
 		},
