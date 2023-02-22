@@ -9,15 +9,23 @@ const closeIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 </svg>
 `;
-// tailwind classes for burger
+// -- tailwind classes --
+// burger
 const LEFT_FULL = `-left-full`;
 const LEFT_0 = `left-0`;
 const OVERFLOW_HIDDEN = `overflow-hidden`;
 const OVERFLOW_AUTO = `overflow-y-auto`;
+// toggle
+const TO_LEFT = `left-0`;
+const TO_RIGHT = `right-0`;
+const BG_OFF = `bg-[#2C3E3E]`;
+const BG_ON = `bg-[#0FAE96]`;
 // ========= HTML element =========
 const $body = document.body; // body element
 const $burger = document.getElementById(`burger`); // icon for burger (header)
 const $menu = document.getElementById(`menu`); // menu for burger (header)
+const $toggleContainer = document.getElementById(`toggleContainer`);
+const $toggleButton = document.getElementById(`toggleButton`);
 // ========= Functions =========
 const createBurger = ($menu, $icon) => {
     $icon.addEventListener(`click`, (event) => {
@@ -55,6 +63,30 @@ const createBurger = ($menu, $icon) => {
         event.preventDefault();
     });
 };
+function createToggle($toggleContainer, $toggleButton) {
+    $toggleContainer.addEventListener(`click`, () => {
+        if ($toggleButton.dataset.status === `off`) {
+            $toggleButton.classList.remove(TO_LEFT);
+            $toggleButton.classList.remove(BG_OFF);
+            $toggleButton.classList.add(TO_RIGHT);
+            $toggleButton.classList.add(BG_ON);
+            $toggleButton.dataset.status = `on`;
+        }
+        else {
+            $toggleButton.classList.remove(TO_RIGHT);
+            $toggleButton.classList.remove(BG_ON);
+            $toggleButton.classList.add(TO_LEFT);
+            $toggleButton.classList.add(BG_OFF);
+            $toggleButton.dataset.status = `off`;
+        }
+    });
+}
+// ========= Main program =========
+// implementing burger
 if ($menu && $burger) {
     createBurger($menu, $burger);
+}
+// implementing toggle
+if ($toggleContainer && $toggleButton) {
+    createToggle($toggleContainer, $toggleButton);
 }
