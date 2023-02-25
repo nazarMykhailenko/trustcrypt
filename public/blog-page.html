@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Trustcrypt</title>
+	</head>
+	<body class="overflow-x-hidden overflow-y-auto">
+		<!-- wrapper -->
+		<div class="text-white min-w-screen min-h-screen flex flex-col">
+			<!-- ibg -->
+			<div
+				class="bg-bgCover bg-no-repeat bg-cover bg-center block fixed -left-[5px] -top-[5px] -right-[5px] -bottom-[5px] -z-20 blur-sm"
+			></div>
+
+			<!-- header -->
+			<header class="z-10 relative py-3">
+				<div
+					class="px-4 w-full md:w-5/6 mx-auto flex items-center justify-between"
+				>
+					<!-- logo block -->
+					<a
+						href="./homepage.html"
+						class="flex items-center space-x-4 cursor-pointer"
+					>
+						<img src="../src/assets/img/logo.svg" alt="logo" />
+						<h1 class="hidden lg:block text-2xl">Trustcrypt</h1>
+					</a>
+
+					<div>
+						<!-- menu -->
+						<div
+							id="menu"
+							class="overflow-auto -z-10 sm:z-0 fixed -left-full top-0 bottom-0 right-0 w-full h-full bg-gradient-to-br from-indigo-500 to-indigo-300 sm:from-transparent sm:to-transparent sm:bg-transparent sm:relative sm:left-0 flex flex-col sm:flex-row items-center sm:space-x-7 md:space-x-10 lg:space-x-20 py-32 sm:py-0 space-y-10 sm:space-y-0"
+						>
+							<!-- navigation -->
+							<div>
+								<ul
+									class="block sm:flex items-center sm:space-x-4 lg:space-x-7"
+								>
+									<li
+										class="text-2xl sm:text-base py-3 border-b-transparent border-b-2"
+									>
+										<a
+											class="inline-block hover:underline"
+											href="./homepage.html"
+											>Home</a
+										>
+									</li>
+									<li
+										class="text-2xl sm:text-base py-3 border-b-transparent border-b-2"
+									>
+										<a
+											class="inline-block hover:underline"
+											href="./products-page.html"
+											>Products</a
+										>
+									</li>
+									<li
+										class="underline sm:no-underline text-2xl sm:text-base py-3 sm:border-b-[#0FAE96] sm:border-b-2"
+									>
+										<a
+											class="inline-block sm:text-[#0FAE96]"
+											href="./blog-page.html"
+											>Blog</a
+										>
+									</li>
+									<li
+										class="text-2xl sm:text-base py-3 border-b-transparent border-b-2"
+									>
+										<a
+											class="inline-block hover:underline"
+											href="./contacts-page.html"
+											>Contacts</a
+										>
+									</li>
+
+									<!-- language -->
+									<li class="flex items-center space-x-1 cursor-pointer">
+										<img
+											class="w-5 h-5 rounded-full"
+											src="../src/assets/img/flag.png"
+											alt="flag"
+										/>
+										<span>ENG</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-4 h-4"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+											/>
+										</svg>
+									</li>
+								</ul>
+							</div>
+
+							<!-- icons -->
+							<div>
+								<ul class="flex items-center space-x-4">
+									<li>
+										<a href="#"
+											><img
+												src="../src/assets/icons/telegram.svg"
+												alt="telegram"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img src="../src/assets/icons/twitter.svg" alt="twitter"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img src="../src/assets/icons/youtube.svg" alt="youtube"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img src="../src/assets/icons/viber.svg" alt="viber"
+										/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- burger -->
+						<div
+							class="z-10 reletive cursor-pointer block sm:hidden"
+							id="burger"
+							data-is_active="false"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-8 h-8"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- page -->
+			<main class="py-16">
+				<div class="px-4 w-full md:w-5/6 mx-auto">
+					<h2 class="text-base sm:text-xl md:text-2xl mb-5 md:mb-8 font-medium">
+						Recent events in the world of cyberspace
+					</h2>
+					<p class="text-sm sm:text-base md:text-lg mb-5 md:mb-8">
+						Check out the information to stay up to date with the latest<br />
+						cyber threats and get advice from security experts.
+					</p>
+					<div class="flex items-center space-x-2 tiny:space-x-5 mb-5 md:mb-8">
+						<div
+							class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#ECF1F0] cursor-pointer rounded border border-[#959999] text-black"
+						>
+							All articles
+						</div>
+						<div
+							class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
+						>
+							Phishing
+						</div>
+						<div
+							class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
+						>
+							Advises
+						</div>
+						<div
+							class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
+						>
+							Approaches
+						</div>
+						<div
+							class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
+						>
+							Gaming
+						</div>
+						<div
+							class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
+						>
+							Security
+						</div>
+						<div
+							class="py-1.5 px-2 text-sm tiny:text-base tiny:py-2 tiny:px-3 bg-[#0B0E0F] cursor-pointer rounded border border-[#101414]"
+						>
+							Development
+						</div>
+					</div>
+
+					<!-- pagination -->
+					<div
+						class="w-full flex flex-col items-center space-y-4 big:space-y-0 big:flex-row big:items-center big:space-x-4"
+					>
+						<div
+							class="w-full big:w-[95%] grid tiny:w-[75%] tiny:mx-auto avg:mx-0 avg:w-full avg:grid-cols-2 lg:grid-cols-3 gap-4 big:gap-8"
+						>
+							<div
+								class="relative inline-block p-3 big:p-4 rounded-xl overflow-hidden"
+							>
+								<div
+									class="absolute -z-10 top-0 bottom-0 left-0 right-0 bg-gradient-to-br from-[#260144] to-[#0FAE96] opacity-50"
+								></div>
+								<div class="relative">
+									<div
+										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
+									>
+										<img
+											src="../src/assets/icons/phishing.svg"
+											alt="phishing"
+										/>
+										<div>Phishing</div>
+									</div>
+									<img
+										src="../src/assets/img/articles/phishing-pic.jpg"
+										alt="phishing"
+									/>
+									<div
+										class="absolute left-3 bottom-3 flex space-x-2 items-center"
+									>
+										<div
+											class="p-2 bg-[#131516] rounded-full flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+												/>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+											<span class="text-sm">24,360</span>
+										</div>
+
+										<div
+											class="p-2 bg-[#131516] rounded-full inline-flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+												/>
+											</svg>
+											<span class="hidden tiny:inline text-sm">05.07.22</span>
+										</div>
+									</div>
+								</div>
+								<h4 class="text-xl big:text-2xl mb-2 big:mb-4">
+									Phishing notification about linking a phone about linking ...
+								</h4>
+								<p class="text-sm big:text-base font-light mb-2">
+									Anti-Phishing Lessons: What Company Employees Should Know
+									About Fake Account Record Security Notifications
+								</p>
+							</div>
+
+							<div
+								class="relative inline-block p-3 big:p-4 rounded-xl overflow-hidden"
+							>
+								<div
+									class="absolute -z-10 top-0 bottom-0 left-0 right-0 bg-gradient-to-br from-[#260144] to-[#0FAE96] opacity-50"
+								></div>
+								<div class="relative">
+									<div
+										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
+									>
+										<img
+											src="../src/assets/icons/phishing.svg"
+											alt="phishing"
+										/>
+										<div>Phishing</div>
+									</div>
+									<img
+										src="../src/assets/img/articles/phishing-pic.jpg"
+										alt="phishing"
+									/>
+									<div
+										class="absolute left-3 bottom-3 flex space-x-2 items-center"
+									>
+										<div
+											class="p-2 bg-[#131516] rounded-full flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+												/>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+											<span class="text-sm">24,360</span>
+										</div>
+
+										<div
+											class="p-2 bg-[#131516] rounded-full inline-flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+												/>
+											</svg>
+											<span class="hidden tiny:inline text-sm">05.07.22</span>
+										</div>
+									</div>
+								</div>
+								<h4 class="text-xl big:text-2xl mb-2 big:mb-4">
+									Phishing notification about linking a phone about linking ...
+								</h4>
+								<p class="text-sm big:text-base font-light mb-2">
+									Anti-Phishing Lessons: What Company Employees Should Know
+									About Fake Account Record Security Notifications
+								</p>
+							</div>
+
+							<div
+								class="relative inline-block p-3 big:p-4 rounded-xl overflow-hidden"
+							>
+								<div
+									class="absolute -z-10 top-0 bottom-0 left-0 right-0 bg-gradient-to-br from-[#260144] to-[#0FAE96] opacity-50"
+								></div>
+								<div class="relative">
+									<div
+										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
+									>
+										<img
+											src="../src/assets/icons/phishing.svg"
+											alt="phishing"
+										/>
+										<div>Phishing</div>
+									</div>
+									<img
+										src="../src/assets/img/articles/phishing-pic.jpg"
+										alt="phishing"
+									/>
+									<div
+										class="absolute left-3 bottom-3 flex space-x-2 items-center"
+									>
+										<div
+											class="p-2 bg-[#131516] rounded-full flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+												/>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+											<span class="text-sm">24,360</span>
+										</div>
+
+										<div
+											class="p-2 bg-[#131516] rounded-full inline-flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+												/>
+											</svg>
+											<span class="hidden tiny:inline text-sm">05.07.22</span>
+										</div>
+									</div>
+								</div>
+								<h4 class="text-xl big:text-2xl mb-2 big:mb-4">
+									Phishing notification about linking a phone about linking ...
+								</h4>
+								<p class="text-sm big:text-base font-light mb-2">
+									Anti-Phishing Lessons: What Company Employees Should Know
+									About Fake Account Record Security Notifications
+								</p>
+							</div>
+
+							<div
+								class="relative inline-block p-3 big:p-4 rounded-xl overflow-hidden"
+							>
+								<div
+									class="absolute -z-10 top-0 bottom-0 left-0 right-0 bg-gradient-to-br from-[#260144] to-[#0FAE96] opacity-50"
+								></div>
+								<div class="relative">
+									<div
+										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
+									>
+										<img
+											src="../src/assets/icons/phishing.svg"
+											alt="phishing"
+										/>
+										<div>Phishing</div>
+									</div>
+									<img
+										src="../src/assets/img/articles/phishing-pic.jpg"
+										alt="phishing"
+									/>
+									<div
+										class="absolute left-3 bottom-3 flex space-x-2 items-center"
+									>
+										<div
+											class="p-2 bg-[#131516] rounded-full flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+												/>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+											<span class="text-sm">24,360</span>
+										</div>
+
+										<div
+											class="p-2 bg-[#131516] rounded-full inline-flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+												/>
+											</svg>
+											<span class="hidden tiny:inline text-sm">05.07.22</span>
+										</div>
+									</div>
+								</div>
+								<h4 class="text-xl big:text-2xl mb-2 big:mb-4">
+									Phishing notification about linking a phone about linking ...
+								</h4>
+								<p class="text-sm big:text-base font-light mb-2">
+									Anti-Phishing Lessons: What Company Employees Should Know
+									About Fake Account Record Security Notifications
+								</p>
+							</div>
+
+							<div
+								class="relative inline-block p-3 big:p-4 rounded-xl overflow-hidden"
+							>
+								<div
+									class="absolute -z-10 top-0 bottom-0 left-0 right-0 bg-gradient-to-br from-[#260144] to-[#0FAE96] opacity-50"
+								></div>
+								<div class="relative">
+									<div
+										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
+									>
+										<img
+											src="../src/assets/icons/phishing.svg"
+											alt="phishing"
+										/>
+										<div>Phishing</div>
+									</div>
+									<img
+										src="../src/assets/img/articles/phishing-pic.jpg"
+										alt="phishing"
+									/>
+									<div
+										class="absolute left-3 bottom-3 flex space-x-2 items-center"
+									>
+										<div
+											class="p-2 bg-[#131516] rounded-full flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+												/>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+											<span class="text-sm">24,360</span>
+										</div>
+
+										<div
+											class="p-2 bg-[#131516] rounded-full inline-flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+												/>
+											</svg>
+											<span class="hidden tiny:inline text-sm">05.07.22</span>
+										</div>
+									</div>
+								</div>
+								<h4 class="text-xl big:text-2xl mb-2 big:mb-4">
+									Phishing notification about linking a phone about linking ...
+								</h4>
+								<p class="text-sm big:text-base font-light mb-2">
+									Anti-Phishing Lessons: What Company Employees Should Know
+									About Fake Account Record Security Notifications
+								</p>
+							</div>
+
+							<div
+								class="relative inline-block p-3 big:p-4 rounded-xl overflow-hidden"
+							>
+								<div
+									class="absolute -z-10 top-0 bottom-0 left-0 right-0 bg-gradient-to-br from-[#260144] to-[#0FAE96] opacity-50"
+								></div>
+								<div class="relative">
+									<div
+										class="absolute flex items-center top-3 left-3 space-x-1 py-0.5 px-2 rounded-full bg-[#0FAE96] cursor-pointer"
+									>
+										<img
+											src="../src/assets/icons/phishing.svg"
+											alt="phishing"
+										/>
+										<div>Phishing</div>
+									</div>
+									<img
+										src="../src/assets/img/articles/phishing-pic.jpg"
+										alt="phishing"
+									/>
+									<div
+										class="absolute left-3 bottom-3 flex space-x-2 items-center"
+									>
+										<div
+											class="p-2 bg-[#131516] rounded-full flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+												/>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+											<span class="text-sm">24,360</span>
+										</div>
+
+										<div
+											class="p-2 bg-[#131516] rounded-full inline-flex space-x-2 items-center"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-4 h-4"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+												/>
+											</svg>
+											<span class="hidden tiny:inline text-sm">05.07.22</span>
+										</div>
+									</div>
+								</div>
+								<h4 class="text-xl big:text-2xl mb-2 big:mb-4">
+									Phishing notification about linking a phone about linking ...
+								</h4>
+								<p class="text-sm big:text-base font-light mb-2">
+									Anti-Phishing Lessons: What Company Employees Should Know
+									About Fake Account Record Security Notifications
+								</p>
+							</div>
+						</div>
+						<div class="w-full big:w-[5%] flex justify-center">
+							<div class="inline-flex big:flex-col bg-[#0B1118] p-1 rounded">
+								<div
+									class="h-11 w-11 flex items-center justify-center mr-4 big:mr-0 big:mb-4 cursor-pointer bg-[#23272C] rounded"
+								>
+									1
+								</div>
+								<div
+									class="h-11 w-11 flex items-center justify-center mr-4 big:mr-0 big:mb-4 cursor-pointer"
+								>
+									2
+								</div>
+								<div
+									class="h-11 w-11 flex items-center justify-center mr-4 big:mr-0 big:mb-4 cursor-pointer"
+								>
+									3
+								</div>
+								<div
+									class="h-11 w-11 flex items-center justify-center cursor-pointer"
+								>
+									4
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<!-- footer -->
+			<footer class="text-center pb-10">
+				<copyright class="sm:text-xs text-sm"
+					>&copy; 2022 LLC Trustcrypt. All rights reserved.</copyright
+				>
+			</footer>
+		</div>
+		<script src="../src/app.js"></script>
+	</body>
+</html>
